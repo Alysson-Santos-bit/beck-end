@@ -33,11 +33,14 @@ func main() {
 	// Na sua main.go da API Go
 	c := cors.New(cors.Options{
 		AllowedOrigins: []string{
-			"http://localhost:5500", // Adicione esta linha para o Live Server
-			"http://127.0.0.1:5500", // Adicione esta linha também, para garantir
-			"http://localhost:8000",
-			"https://alysson-santos-bit.github.io/front-end",  // Se você estiver usando o Python Simple HTTP Server na porta 8000
-			"https://alysson-santos-bit.github.io/front-end/", // ... outras origens como o GitHub Pages para deploy final
+			// Origens para desenvolvimento local (se você testar localmente no futuro)
+			"http://localhost:5500",
+			"http://127.0.0.1:5500",
+			// IMPORTANTE: Suas URLs do GitHub Pages - COM E SEM A BARRA FINAL
+			"https://alysson-santos-bit.github.io/front-end",  // URL do seu front-end (sem barra final)
+			"https://alysson-santos-bit.github.io/front-end/", // URL do seu front-end (com barra final)
+			// URL da sua própria API no Render (útil para testes diretos ou se a API tiver front-end próprio)
+			"https://beck-end-oafv.onrender.com",
 		},
 		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowedHeaders:   []string{"Authorization", "Content-Type"},

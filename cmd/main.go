@@ -33,10 +33,10 @@ func main() {
 	// Na sua main.go da API Go
 	c := cors.New(cors.Options{
 		AllowedOrigins: []string{
-			"http://localhost:5500", // Adicione esta linha para o Live Server
-			"http://127.0.0.1:5500", // Adicione esta linha também, para garantir
-			"http://localhost:8000", // Se você estiver usando o Python Simple HTTP Server na porta 8000
-			// ... outras origens como o GitHub Pages para deploy final
+			"http://localhost:5500",                           // Adicione esta linha para o Live Server
+			"http://127.0.0.1:5500",                           // Adicione esta linha também, para garantir
+			"http://localhost:8000",                           // Se você estiver usando o Python Simple HTTP Server na porta 8000
+			"https://alysson-santos-bit.github.io/front-end/", // ... outras origens como o GitHub Pages para deploy final
 		},
 		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowedHeaders:   []string{"Authorization", "Content-Type"},

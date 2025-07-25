@@ -21,6 +21,7 @@ func SetupRouter(db *gorm.DB) *gin.Engine {
 			"http://127.0.0.1:5500",                           // Para desenvolvimento local
 			"https://Alysson-Santos-bit.github.io/front-end",  // Seu front-end (sem barra final)
 			"https://Alysson-Santos-bit.github.io/front-end/", // Seu front-end (com barra final)
+			"https://beck-end-oafv.onrender.com",
 		},
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Accept", "Authorization"},
